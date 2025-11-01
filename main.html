@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<script>
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function change_slide(){
+        while(true){
+            const img_element = document.getElementById("slide_image");
+            slide_array = ["resources/banner1.png","resources/banner2.png","resources/banner3.png"];
+            for(copy of slide_array){
+                img_element.setAttribute("src",copy);
+                await delay(3000);
+            }
+        }
+    }
+
+    
+</script>
+<head>
+    <title>MastterTech</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="post">
+        <img src="resources/logo.png" width="30%" height="150px" alt="">
+    </header>
+
+    <main>
+        <div class="post_sobre" id="post">
+            <h1>Sobre nós:</h1>
+            <h2>Somos uma assistência especializada em 
+                concertos de celulares, venda de peças e acessórios em Itabaianinha-Sergipe.</h2>
+        </div>
+
+        <div class="slides_container" id="post">
+            <a href="https://wa.me/5579996725738?text=Tenho%20interesse%20em%20concertar%20meu%20celular"><img id="slide_image" src="resources/logo.jpg" width="700" height="500" alt=""></a>
+            <div class="index_container">
+            </div>
+            <script>change_slide()</script>
+        </div>
+
+        <div class="post_maps" id="post">
+            <h1>Faça já sua visita:</h1>
+            <h2>Largo Tobias Barreto, 199 - conveniencia, Itabaianinha - SE</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8304112670908!2d-37.7910013!3d-11.273873699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7105a659c02765d%3A0x6c237fb484b2bfcb!2sMaster%20Tech%20Vendas%20e%20Assist%C3%AAncia%20T%C3%A9cnica!5e0!3m2!1spt-BR!2sbr!4v1760786218172!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <div class="side_buttons">
+            <a href="https://www.instagram.com/masttertech_itabaianinha/"><img src="resources/instagram_btn2.png" width="250px" height="80px" alt=""></a>
+            <a href="https://wa.me/5579996725738?text=Tenho%20interesse%20em%20concertar%20meu%20celular"><img src="resources/whatsapp_btn1.png" width="250px" height="80px"  alt="" id="side_btn1"></a>
+        </div>
+
+
+    </main>
+
+    <footer id="post">
+        <p>Copyright: 2025</p>
+    </footer>
+</body>
+
+
