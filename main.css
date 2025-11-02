@@ -102,7 +102,7 @@ body main .side_buttons img{
 
 @media (max-width:1440px){
     body main .side_buttons{
-        margin-bottom: 20%;
+        margin-bottom: 80%;
     }
 
     body main{
@@ -117,5 +117,6 @@ body main .side_buttons img{
         width:90%;
     }
 }
+
 
 
