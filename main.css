@@ -100,40 +100,21 @@ body main .side_buttons img{
     max-height:100%;
 }
 
-
-/*@media (max-width:1000px){
-    body main .side_buttons{
-        margin-bottom: 30%;
-    }
-
-    body main{
-        width:90%;
-    }
-
-    body header{
-        width:90%;
-    }
-
-    body footer{
-        width:90%;
-    }
-}*/
-
-
 @media (max-width:1440px){
     body main .side_buttons{
         margin-bottom: 30%;
     }
 
     body main{
-        width:50%;
+        width:90%;
     }
 
     body header{
-        width:50%;
+        width:90%;
     }
 
     body footer{
-        width:50%;
+        width:90%;
     }
 }
+
