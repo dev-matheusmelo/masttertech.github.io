@@ -47,7 +47,7 @@ body main .post_sobre{
     margin-bottom: 10px;
     border:5px solid rgb(0, 140, 255);
     border-radius: 12px;
-    padding: 10px;
+    padding:10px;
     background-color: rgb(37, 37, 37);
     color:white;
 }
@@ -64,7 +64,7 @@ body main .slides_container{
 
 
 body main .slides_container img{
-    max-width:100%;
+    max-width:98%;
     height:100%;
     border:5px solid rgb(0, 140, 255);
     border-radius: 5%;
@@ -95,8 +95,13 @@ body main .side_buttons{
     width:100%;
 }
 
+body main .side_buttons img{
+    max-width:100%;
+    max-height:100%;
+}
 
-@media (max-width:1440px){
+
+/*@media (max-width:1000px){
     body main .side_buttons{
         margin-bottom: 30%;
     }
@@ -111,5 +116,24 @@ body main .side_buttons{
 
     body footer{
         width:90%;
+    }
+}*/
+
+
+@media (max-width:1440px){
+    body main .side_buttons{
+        margin-bottom: 30%;
+    }
+
+    body main{
+        width:50%;
+    }
+
+    body header{
+        width:50%;
+    }
+
+    body footer{
+        width:50%;
     }
 }
