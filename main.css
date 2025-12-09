@@ -34,14 +34,6 @@ body main{
     /* border:1px solid green; */
 }
 
-body main .post_sobre{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
 #post{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -50,6 +42,56 @@ body main .post_sobre{
     padding:10px;
     background-color: rgb(37, 37, 37);
     color:white;
+}
+
+body main .post_sobre{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+body main .post_sobre video{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    height:80%;
+    margin:2%;
+    border-radius: 10px;
+    border:2px solid red;
+}
+
+body main .post_celulares_novos{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+}
+
+body main .post_celulares_novos .post_celular_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-around;
+    width:100%;
+}
+
+body main .post_celulares_novos .post_celular_container .post_celular{
+    display:flex;
+    flex-direction: column;
+    width:20%;
+    justify-content: center;
+    text-align: center;
+}
+
+#comprar_btn{
+    background-color: greenyellow;
+    border:5px solid greenyellow;
+    border-radius: 20px;
+    text-align: center;
+    color:Black;
+    font-size: large;
 }
 
 body main .slides_container{
@@ -86,20 +128,7 @@ body footer{
     width:70%;
 }
 
-body main .side_buttons{
-    position: fixed;
-    display:flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-around;
-    width:100%;
-}
 
-body main .side_buttons img{
-    max-width:50%;
-    max-height:50%;
-    padding-left: 50%;
-}
 
 
 /*@media (max-width:1000px){
@@ -121,7 +150,7 @@ body main .side_buttons img{
 }*/
 
 
-@media (max-width:1440px){
+@media (max-width:1000px){
     body main .side_buttons{
         margin-bottom: 15%;
     }
@@ -137,5 +166,8 @@ body main .side_buttons img{
     body footer{
         width:90%;
     }
-}
 
+    body main .post_celulares_novos .post_celular_container .post_celular{
+        width:40%;
+    }
+}
